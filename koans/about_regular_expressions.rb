@@ -53,7 +53,7 @@ class AboutRegularExpressions < EdgeCase::Koan
     animals = ["cat", "bat", "rat", "zat"]
     assert_equal ["cat", "bat", "rat"], animals.select { |a| a[/[cbr]at/] }
   end
- 
+  
   def test_slash_d_is_a_shortcut_for_a_digit_character_class
     assert_equal "42", "the number is 42"[/[0123456789]+/]
     assert_equal "42", "the number is 42"[/\d+/]
