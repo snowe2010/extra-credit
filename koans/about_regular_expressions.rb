@@ -58,7 +58,7 @@ class AboutRegularExpressions < EdgeCase::Koan
     assert_equal "42", "the number is 42"[/[0123456789]+/]
     assert_equal "42", "the number is 42"[/\d+/]
   end
-
+ 
   def test_character_classes_can_include_ranges
     assert_equal "42", "the number is 42"[/[0-9]+/]
   end
